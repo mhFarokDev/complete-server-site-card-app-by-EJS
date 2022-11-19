@@ -1,0 +1,9 @@
+==== EJS =====
+-> Static folder
+-> ejs layout make VIEW file default static
+
+--> npm i ejs express-ejs-layouts
+--> install ejs language support in VSCode
+--> use express layouts
+
+--> res.redirect('/') -- method --

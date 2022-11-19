@@ -1,0 +1,41 @@
+
+    
+    <div class="container">
+        <div class="row justify-content-center my-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between"><h2>Edit Student</h2> <a href="/" class="btn btn-success">Back</a></div>
+                        <hr>
+                        <form action="/api/student/edit" method="post" enctype="multipart/form-data">
+                            <div class="my-3">
+                                <label for="name">Name</label>
+                                <input class="form-control" type="text" name="name" id="name" value="<%=data.name%>">
+                            </div>
+                            <div class="my-3">
+                                <label for="email">email</label>
+                                <input class="form-control" type="text" name="email" id="email" value="<%=data.email%>">
+                            </div>
+                            <div class="my-3">
+                                <label for="call">call</label>
+                                <input class="form-control" type="text" name="call" id="call" value="<%=data.call%>">
+                            </div>
+                            <div class="my-3">
+                                <label >photo : </label>
+                                <img src="/assets/upload/<%=data.photo%>" style="width: 50px;height:50px;object-fit:cover;border-radius: 50%;" alt="">
+                                <br/><label for="photo">New Photo</label>
+                                <input class="form-control" type="file" name="photo" id="photo">
+                            </div>
+                            <input type="hidden" name="id" value="<%=data._id%>">
+                            <input type="hidden" name="prevImgname" value="<%=data.photo%>">
+                            <input type="submit" class="btn btn-primary">
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+

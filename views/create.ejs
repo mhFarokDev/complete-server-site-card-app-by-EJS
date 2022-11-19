@@ -1,0 +1,37 @@
+
+    
+    <div class="container">
+        <div class="row justify-content-center my-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between"><h2>Create Student</h2> <a href="/" class="btn btn-success">Back</a></div>
+                        <hr>
+                        <form action="/api/student" method="post" enctype="multipart/form-data">
+                            <div class="my-3">
+                                <label for="name">Name</label>
+                                <input class="form-control" type="text" name="name" id="name">
+                            </div>
+                            <div class="my-3">
+                                <label for="email">email</label>
+                                <input class="form-control" type="text" name="email" id="email">
+                            </div>
+                            <div class="my-3">
+                                <label for="call">call</label>
+                                <input class="form-control" type="text" name="call" id="call">
+                            </div>
+                            <div class="my-3">
+                                <label for="photo">photo</label>
+                                <input class="form-control" type="file" name="photo" id="photo">
+                            </div>
+                            <input type="submit" class="btn btn-primary">
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
